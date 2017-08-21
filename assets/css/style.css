@@ -1,0 +1,36 @@
+/* general styling */
+
+h1{
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 116px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #A40505;
+    font-size: 30px;
+    padding-top:40px;
+}
+
+#myPic{
+    border: 20px solid #C54444;
+}
+
+body{
+    overflow: scroll;
+    background-image: url("http://wallarthd.com/wp-content/uploads/2014/09/Mac-Keyboard-Wallpaper-HD-172.jpg");
+    background-size: 250% 925px;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+.masterHead{
+    background-color: #333;
+    height: 80px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
