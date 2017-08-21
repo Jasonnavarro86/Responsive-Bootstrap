@@ -1,36 +1,458 @@
 /* general styling */
 
+
+* {
+    box-sizing: border-box;
+}
+
 h1{
-    padding: 20px;
-    margin-bottom: 15px;
+    
+    margin-bottom: 55px;
     text-align: center;
     font-family: 'Zilla Slab Highlight', cursive;
-    font-size: 116px;
+    font-size: 186px;
+    /* border-bottom: 10px solid #C54444; */
+
+    
 }
 
 p{
-    font-family: 'Raleway', sans-serif;
-    color: #A40505;
-    font-size: 30px;
-    padding-top:40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #FFFFFF;
+    font-size: 27px;
+    line-height: 1.6;
+    padding: 10px 0px;
+    opacity: 0.8;
+    margin-left: 10px;
+    
+    
 }
+ a{
+    text-decoration: none;
+    color: white;
+ }
 
-#myPic{
-    border: 20px solid #C54444;
-}
 
 body{
-    overflow: scroll;
+  
     background-image: url("http://wallarthd.com/wp-content/uploads/2014/09/Mac-Keyboard-Wallpaper-HD-172.jpg");
-    background-size: 250% 925px;
+    background-size: 250% auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header */
 .masterHead{
-    background-color: #333;
-    height: 80px;
+    background-color: #AEAEAE;
+    height: 90px;
     position: fixed;
     z-index: 99;
     width: 100%;
+    padding: 0px;
+
+}
+
+.navbar-brand{
+   background-color: #343a40;
+   width:170px;
+   height: 90px;
+   font-size: 56px;
+   text-align: center;
+   
+   line-height: 1.4;
+}
+
+/* main container holding 3 sections */
+#mainContainer{
+  
+    
+}
+/* main section */
+
+#aboutMe{
+    padding-top: 120px;
+    margin-bottom: 70px;
+overflow: auto;
+}
+
+/* my picture */
+#myPic{
+    border: 40px solid #C54444;
+    padding: 0px;
+    opacity: 0.9;
+    height: 400px;
+    margin:0px auto;
+    margin-left: 130px;
+}
+
+/* my portfolio */
+
+
+.col-4:nth-child(even){
+    margin-right: 105px;
+}
+.col-4{
+    margin-bottom: 90px;
+}
+
+#portfolio h1{
+    margin-bottom: 150px;
+}
+
+.fixEd{
+position: relative;
+}
+
+
+/* contact form */
+#contact{
+    overflow: auto;
+}
+.contactSection{
+    background-color: #C54444;
+    padding: 10px;
+    margin-left:15px;
+    margin-right: 15px;
+    opacity: 0.7;
+
+}
+ul{
+font-size:20px;
+color: white;
+padding: 10px;
+
+}
+.label{
+   margin-bottom: 10px;
+}
+
+li{
+    width: 100%;
+    
+}
+
+textarea{
+    height: 200px;
+}
+form{
+    margin-bottom: 50px;
+}
+
+/* footer */
+footer{
+    background-color: #343a40;
+    width: 100%;
+    height: 140px;
+    margin-bottom: -40px;
+    clear: both;
+    position: relative;
+}
+
+footer i{
+    float: right;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+.fa-github-alt{
+   
+position: absolute;
+right: 5px;
+bottom: 20px;
+}
+
+.fa-linkedin-square{
+    
+ position: absolute;
+ right: 85px;
+ bottom: 20px;
+ }
+
+ .fa-stack-overflow{
+ position: absolute;
+ right: 160px;
+ bottom: 20px;
+ }
+
+ .fa-stack-overflow:hover{
+     color: #C54444 !important;
+ }
+
+footer p{
+    
+    margin:0px;
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+    line-height: 9.3;
+    
+    
+    
+}
+/* pusher for sticky bottom */
+.pusher{
+    margin-bottom: 70px;
+}
+
+/* links */
+
+a{
+    cursor: pointer;
+}
+
+a:visited{
+color: white;
+}
+
+a:hover{
+    color: #C54444 !important;
+    }
+
+    
+/* responsive */
+
+@media only screen and (max-width:980px){
+    
+    .continer{
+        max-width: 850px 
+    }
+    /* navbar */
+    .masterHead.container{
+        position: static;
+        width: 100%;
+        max-width: 850px;
+        
+    }
+    
+    .navbar-brand{
+        
+    }
+
+    /* main section */
+    #mainContainer.container{
+        max-width:  850px;
+        margin: 0px auto;
+        overflow: auto;
+    }
+
+    h1{
+        font-size:120px;
+        
+    }
+    /* about me section  */
+    #aboutMe p{
+        margin-bottom: 40px;
+        font-size: 28px;
+        margin-right: 10px;
+        line-height: 1.9;
+
+        
+        
+    }
+
+    .myP{
+        
+        max-width: 620px;
+        margin: 0px auto;
+      
+    }
+    
+    #aboutMe img{
+        margin-bottom: 70px;  
+        max-width: 620px;
+        margin: 0px auto;
+        margin-left: 90px;
+    }
+
+    .myImg{
+        padding-left: 0px;
+    }
+    /* portfolio */
+    #portfolio h1{
+        margin-bottom: 50px;
+        margin-right: 0px;
+    }
+    #portfolio img{
+        max-width: 260px;
+        margin-left: 25px;
+
+    }
+  
+    
+   
+
+    .fa-github-alt{
+        
+     font-size: 40px;
+     right: 5px;
+     bottom: 40px;
+     }
+     
+     .fa-linkedin-square{
+         
+      font-size: 40px;
+      right: 55px;
+      bottom: 40px;
+      }
+     
+    .fa-stack-overflow{
+      font-size: 40px;
+      right: 105px;
+      bottom: 40px;
+      }
+
+
+} 
+
+
+@media only screen and (max-width:768px){
+    /* general */
+    
+    .continer{
+        max-width: 650px 
+    }
+    /* navbar */
+    .masterHead.container{
+        position: static;
+        width: 100%;
+        max-width: 650px;
+        
+    }
+    
+    .navbar-brand{
+        margin-left: 40px;
+    }
+
+    /* main section */
+    #mainContainer.container{
+        max-width:  650px;
+        margin: 0px auto;
+        overflow: auto;
+    }
+
+    h1{
+        font-size:100px;
+        
+    }
+    /* about me section  */
+    #aboutMe p{
+        margin-bottom: 40px;
+        padding: 20px;
+        font-size: 18px;
+        
+    }
+    #aboutMe img{
+        margin-bottom: 20px;   
+    }
+
+    .myImg{
+        padding-left: 0px;
+    }
+
+    .myP{
+        margin-left: 15px;
+    }
+    /* portfolio */
+    #portfolio h1{
+        margin-bottom: 50px;
+        margin-right: 15px;
+    }
+    #portfolio img{
+        max-width: 260px;
+        margin-left: 20px;
+
+    }
+  
+    
+   
+
+    .fa-github-alt{
+        
+     font-size: 40px;
+     right: 5px;
+     bottom: 40px;
+     }
+     
+     .fa-linkedin-square{
+         
+      font-size: 40px;
+      right: 55px;
+      bottom: 40px;
+      }
+     
+    .fa-stack-overflow{
+      font-size: 40px;
+      right: 105px;
+      bottom: 40px;
+      }
+
+
+} 
+
+@media only screen and (max-width:640px){
+    /* general */
+    
+    .continer{
+        max-width: 640px 
+    }
+    /* navbar */
+    .masterHead.container{
+        position: static;
+        width: 100%;
+        max-width: 640px;
+    }
+
+    /* main section */
+    #mainContainer.container{
+        max-width:  640px;
+        margin: 0px auto;
+        overflow: auto;
+    }
+    h1{
+        font-size:90px;
+        
+    }
+    /* about me section  */
+    #aboutMe p{
+        margin-bottom: 30px;
+    }
+    #aboutMe img{
+        margin-bottom: 40px;
+        margin-right: 10px;
+    }
+
+    .myP{
+       margin-left: 20px;
+    }
+    /* portfolio */
+    #portfolio h1{
+        margin-bottom: 50px;
+    }
+    #portfolio img{
+        max-width: 250px;
+        margin-left: 20px;
+    }
+
+    .fa-github-alt{
+        
+     font-size: 30px;
+     right: 5px;
+     bottom: 40px;
+     }
+     
+     .fa-linkedin-square{
+         
+      font-size: 30px;
+      right: 45px;
+      bottom: 40px;
+      }
+     
+    .fa-stack-overflow{
+      font-size: 30px;
+      right: 85px;
+      bottom: 40px;
+      }
+    
 }

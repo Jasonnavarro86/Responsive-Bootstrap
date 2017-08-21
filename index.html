@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Anton|Raleway|Zilla+Slab+Highlight" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Zilla+Slab+Highlight" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Jason Navarro's Responsive Bootstrap</title>
 </head>
@@ -16,11 +17,11 @@
 <body>
     <header class="masterHead navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar navbar-brand" href="">Jason Navarro</a>
+            <a class="navbar navbar-brand" href="">J N</a>
             <nav>
-                <a class="btn btn-danger" href=""></a>
-                <a class="btn btn-danger" href=""></a>
-                <a class="btn btn-danger" href=""></a>
+                <a class="btn btn-dark btn-lg" href="#aboutMe">About</a>
+                <a class="btn btn-dark btn-lg" href="#portfolio">Portfolio</a>
+                <a class="btn btn-dark btn-lg" href="#contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -31,11 +32,14 @@
             <div class="row">
                 <h1 class="col">About Me</h1>
             </div>
-            <div class="row">
+            <div class="row myP">
                 <p class="col">I am ecstatic to be web developer! I am a devote husband, a father of three, and a dedicated christian. Two
-                    things I really enjoy are working with people and coding. It is my goal to make a postive impact in the
-                    world with my new found knowledge of web development.</p>
-                <img src="http://res.cloudinary.com/dwsj3124z/image/upload/v1501810681/jason_fpvwcd.png" id="myPic" class="col img-fluid" alt="picture of myself">
+                    things I really enjoy are working with people and coding. It will be my goal to make a postive impact
+                    in the world with my new found knowledge of web development.</p>
+                <div class="col myImg">
+                    <img src="http://res.cloudinary.com/dwsj3124z/image/upload/v1501810681/jason_fpvwcd.png" id="myPic" class="rounded-circle"
+                        alt="picture of myself">
+                </div>
             </div>
 
         </section>
@@ -45,6 +49,42 @@
             <div class="row">
                 <h1 class="col">Portfolio</h1>
             </div>
+            <div class="row justify-content-around">
+
+                <!-- 6 images wraped in div for col-->
+                <div class="col-4 fixEd">
+                    <img src="assets/css/images/test6.png" alt="place holder">
+
+                </div>
+
+                <div class="col-4 fixEd">
+                    <img src="assets/css/images/youarelovely.png" alt="placeholder">
+
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-4 fixEd">
+                    <img src="assets/css/images/dazzle.png" alt="place holder">
+
+                </div>
+                <div class="col-4 fixEd">
+                    <img src="assets/css/images/test7.png" alt="place holder">
+
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-4 fixEd">
+                    <img src="assets/css/images/test8.png" alt="place holder">
+
+                </div>
+                <div class="col-4 fixEd">
+                    <img src="assets/css/images/test9.png" alt="place holder">
+
+                </div>
+            </div>
+
 
 
 
@@ -54,6 +94,32 @@
             <div class="row">
                 <h1 class="col">Contact</h1>
             </div>
+            <form class="contactForm">
+                <div class="contactSection">
+                    <ul class="row">
+                        <li>
+                            <label class="col label" for="name">Name</label>
+                            <input class="col input" type="text" placeholder="Name">
+
+                        </li>
+                    </ul>
+                    <ul class="row">
+                        <li>
+                            <label class="col label" for="name">Email</label>
+                            <input class="col input" type="text" placeholder="Email">
+
+                        </li>
+                    </ul>
+                    <ul class="row">
+                        <li>
+                            <label class="col label" for="name">Message</label>
+                            <textarea class="col input" type="message"></textarea>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
 
 
         </section>
@@ -67,12 +133,16 @@
     </div>
 
 
-    <footer class="container">
-        <div>
+    <footer class="container1">
+        <div class="container pFooter">
             <!-- icons -->
-            <a href="https://github.com/Jasonnavarro86"><i class="fa fa-github-alt fa-4x" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/jasonnavarro007/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
-            <a href="https://stackoverflow.com/users/8228926/jason-n"><i class="fa fa-stack-overflow fa-4x" aria-hidden="true"></i></a>
+            <div class="icon-div">
+                <a class- "icon-block" href="https://github.com/Jasonnavarro86"><i class="fa fa-github-alt fa-4x" aria-hidden="true"></i></a>
+
+                <a class- "icon-block" href="https://www.linkedin.com/in/jasonnavarro007/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+
+                <a class- "icon-block" href="https://stackoverflow.com/users/8228926/jason-n"><i class="fa fa-stack-overflow fa-4x" aria-hidden="true"></i></a>
+            </div>
             <p id="footerP">&copy; Copy Right 2017 Jason Navarro</p>
         </div>
     </footer>
