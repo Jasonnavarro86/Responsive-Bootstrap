@@ -75,6 +75,12 @@ body{
 overflow: auto;
 }
 
+#aboutMe p{
+  
+    color:#050404;
+    
+    
+}
 /* my picture */
 #myPic{
     border: 40px solid #C54444;
@@ -341,6 +347,7 @@ a:hover{
         margin-bottom: 40px;
         padding: 20px;
         font-size: 18px;
+       
         
     }
     #aboutMe img{
